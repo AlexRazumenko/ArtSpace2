@@ -1,0 +1,21 @@
+/*
+$Id: micro-ie.css 17 2007-09-03 23:30:04Z massimo $
+
+MicroCss by Scaracco (http://scaracco.wordpress.org - scaracco@gmail.com)
+
+Microsoft Internet Explorer hack
+To include insert in the HEAD:
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="micro-ie.css" title="default" media="screen" />
+<![endif]-->
+*/
+
+
+/* width - IE hack */
+.right20         {*width: 19.9%}
+.right25         {*width: 24.9%}
+.left33, .right33 {*width: 33.9%}
+.right50         {*width: 49.9%}
+.left75, .right75 {*width: 74.9%}
+.left80, .right80 {*width: 79.9%}

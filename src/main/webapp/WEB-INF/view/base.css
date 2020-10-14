@@ -1,0 +1,24 @@
+/* da html.it */
+
+/*colore del body e testo*/
+body{background:#FFF;color:#333}
+
+/*stili sul body e tipografia */
+body{font: 100.01%/1.5 Arial, Helvetica, sans-serif}
+/* body {	background: url(18.gif) repeat; } */
+
+h1{font-size: 2.4em;line-height: 1.25;margin: 0.625em 0}
+h2{font-size: 1.5em;line-height: 1;margin: 2em 0 1em 0}
+h3{font-size: 1.35em;line-height: 1.1111;margin: 1.1111em 0}
+h4{font-size: 1.2em;line-height: 1.25;margin: 1.25em 0}
+h5{font-size: 1em;line-height: 1.5;margin: 1.5em 0}
+h6{font-size: 0.75em;line-height: 2;margin: 2em 0}
+
+/*line-height*/
+p, blockquote, pre, ol, dl, ul, form {line-height:1.5}
+
+/* set di base per margini e padding */
+html, body{margin: 0;padding: 0}
+address, blockquote, dl, form,
+fieldset, ol, table, p, pre, ul{
+  margin-top: 0;margin-bottom: 1.5em}

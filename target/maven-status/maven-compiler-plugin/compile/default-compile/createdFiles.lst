@@ -1,0 +1,5 @@
+org\alex\artspace\entity\User.class
+org\alex\artspace\entity\ContentType.class
+org\alex\artspace\entity\Content.class
+org\alex\artspace\entity\Comment.class
+org\alex\artspace\Role.class

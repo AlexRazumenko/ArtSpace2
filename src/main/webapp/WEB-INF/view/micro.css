@@ -1,0 +1,95 @@
+/*
+
+$Id: micro.css 17 2007-09-03 23:30:04Z massimo $
+ 
+MicroCss by Scaracco (http://www.scaracco.net - scaracco@gmail.com)
+
+Uso delle classi:
+
+	.left<NUM>
+	.right<NUM>
+
+	<NUM> = 20 25 33 50 66 75 80
+
+*/
+
+/******************************************************************************/
+/* base                                                                       */
+/******************************************************************************/
+
+/* float */
+.left20,  .left25,  .left33,  .left50,  .left66,  .left75,  .left80  {float: left }
+.right20, .right25, .right33, .right50, .right66, .right75, .right80 {float: right}
+
+/* width */
+.left20, .right20 {width: 20%}
+.left25, .right25 {width: 25%}
+.left33, .right33 {width: 34%}
+.left50, .right50 {width: 50%}
+.left66, .right66 {width: 66%}
+.left75, .right75 {width: 75%}
+.left80, .right80 {width: 80%}
+
+
+
+/******************************************************************************/
+/* clearfix                                                                   */
+/* http://www.positioniseverything.net/easyclearing.html                      */
+/******************************************************************************/
+.wrap:after {content: "."; display: block; height: 0; clear: both; visibility: hidden; font-size: 0px;}
+* html .wrap {height: 1%} /* IE hack */
+
+
+/******************************************************************************/
+/* reset                                                                      */
+/* http://tantek.com/log/2004/09.html#d06t2354                                */
+/* http://leftjustified.net/journal/2004/10/19/global-ws-reset/               */
+/* http://developer.yahoo.com/yui/reset/ (YUI Reset CSS)                      */
+/******************************************************************************/
+/* html {font: 100%/120% Arial, Helvetica, sans-serif} */
+html, body, div, 
+dl, dt, dd, ul, ol, li, 
+h1, h2, h3, h4, h5, h6, 
+pre, p, blockquote, 
+/* form, input, fieldset, textarea,  */
+th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	font-size:inherit;
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address, caption, cite, code, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+/* caption, th {
+	text-align: left;
+} */
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+q:before, q:after {
+	content:'';
+}
+abbr, acronym { 
+	border:0;
+}
+select, input, textarea {font-size: 99%; font-family: inherit}
+pre, code {font-family: "courier new", monospaced}
+
+
+/******************************************************************************/
+/* defaults                                                                   */
+/******************************************************************************/
+body {text-align: center} /* IE hack */
+#container {margin: auto; text-align: left}
