@@ -3,6 +3,7 @@ package org.alex.artspace.entity;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
+<<<<<<< HEAD
 import java.util.*;
 
 @Entity
@@ -172,4 +173,31 @@ public class Content {
 //    public void setRating(double rating) {
 //        this.rating = rating;
 //    }
+=======
+import java.util.HashMap;
+import java.util.Map;
+
+@Entity
+@Component
+@Table(name = "content")
+public abstract class Content {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    private User author;
+
+    @Enumerated(EnumType.STRING)
+    private ContentType type;
+
+    private String title;
+
+    private String description;
+
+    private Map<Integer, Integer> votesMap = new HashMap<>();
+
+    private double rating;
+
+>>>>>>> a84aaf526732677e401adb2e6237c14f637126b4
 }

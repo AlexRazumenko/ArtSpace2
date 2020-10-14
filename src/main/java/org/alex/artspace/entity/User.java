@@ -4,17 +4,26 @@ import org.alex.artspace.Role;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+>>>>>>> a84aaf526732677e401adb2e6237c14f637126b4
 import java.util.Date;
 import java.util.List;
 
 @Entity
+<<<<<<< HEAD
 //@Component
 @Table(name = "users")
+=======
+@Component
+@Table (name = "users")
+>>>>>>> a84aaf526732677e401adb2e6237c14f637126b4
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+<<<<<<< HEAD
     @Column
     private Long id;
 
@@ -169,4 +178,28 @@ public class User {
                 ", role=" + role +
                 '}';
     }
+=======
+    private Long id;
+
+    private String email;
+
+    private String name;
+
+    private String password;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Content> userContentList;
+
+    private Date regDate = new Date();
+
+    @Enumerated (EnumType.STRING)
+    private Role role;
+
+    @Transient
+    private int contentNumber;
+
+    @Transient
+    private int rating;
+
+>>>>>>> a84aaf526732677e401adb2e6237c14f637126b4
 }

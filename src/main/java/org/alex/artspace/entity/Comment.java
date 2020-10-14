@@ -3,12 +3,19 @@ package org.alex.artspace.entity;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Entity
 //@Component
+=======
+import java.util.Date;
+
+@Entity
+@Component
+>>>>>>> a84aaf526732677e401adb2e6237c14f637126b4
 @Table(name = "comments")
 public class Comment {
 
@@ -16,6 +23,7 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+<<<<<<< HEAD
     @ManyToOne
     @JoinColumn (name = "content_id")
     private Content content;
@@ -36,10 +44,17 @@ public class Comment {
 //            inverseJoinColumns = {@JoinColumn (name = "user_id", referencedColumnName = "id")})
 //    private List<User> usersLiked = new ArrayList<>();
 
+=======
+    private Content content;
+
+    private User author;
+
+>>>>>>> a84aaf526732677e401adb2e6237c14f637126b4
     private Date date = new Date();
 
     private String text;
 
+<<<<<<< HEAD
     @Transient
     private int rating;
 
@@ -107,4 +122,8 @@ public class Comment {
     public void setRating(int rating) {
         this.rating = rating;
     }
+=======
+    private int rating;
+
+>>>>>>> a84aaf526732677e401adb2e6237c14f637126b4
 }
